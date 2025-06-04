@@ -110,8 +110,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Nigerian Businesses Directory</h1>
-        
+        <h1>Nigerian Businesses Directory (1500 Companies)</h1>
+
         <div class="filter-container">
             <input type="text" id="searchInput" placeholder="Search for businesses...">
             <div style="display: flex; gap: 10px; margin-bottom: 10px;">
@@ -132,6 +132,8 @@
                     <option value="Entertainment">Entertainment</option>
                     <option value="Transportation">Transportation</option>
                     <option value="Hospitality">Hospitality</option>
+                    <option value="FMCG">FMCG</option>
+                    <option value="Startup">Startup</option>
                 </select>
                 <select id="sizeFilter">
                     <option value="">All Sizes</option>
@@ -141,12 +143,12 @@
                 </select>
             </div>
         </div>
-        
+
         <div class="business-grid" id="businessContainer">
             <!-- Businesses will be loaded here via JavaScript -->
         </div>
     </div>
-    
+
     <a href="#" class="top-button" id="topButton">Back to Top</a>
 
     <script>
@@ -168,7 +170,7 @@
             { name: "Unity Bank", industry: "Banking & Finance", size: "Large", website: "unitybankng.com" },
             { name: "Heritage Bank", industry: "Banking & Finance", size: "Large", website: "hbng.com" },
             { name: "Keystone Bank", industry: "Banking & Finance", size: "Large", website: "keystonebankng.com" },
-            
+
             // Banking & Finance - Medium
             { name: "SunTrust Bank", industry: "Banking & Finance", size: "Medium", website: "suntrustng.com" },
             { name: "Providus Bank", industry: "Banking & Finance", size: "Medium", website: "providusbank.com" },
@@ -183,7 +185,7 @@
             { name: "Greenwich Merchant Bank", industry: "Banking & Finance", size: "Medium", website: "greenwichmb.com" },
             { name: "Nova Merchant Bank", industry: "Banking & Finance", size: "Medium", website: "novambl.com" },
             { name: "Rand Merchant Bank", industry: "Banking & Finance", size: "Medium", website: "rmb.co.za" },
-            
+
             // Banking & Finance - Small
             { name: "VFD Microfinance Bank", industry: "Banking & Finance", size: "Small", website: "vfdbank.com" },
             { name: "Page Microfinance Bank", industry: "Banking & Finance", size: "Small", website: "pagemfbank.com" },
@@ -196,7 +198,7 @@
             { name: "AG Mortgage Bank", industry: "Banking & Finance", size: "Small", website: "agmortgagebank.com" },
             { name: "Abbey Mortgage Bank", industry: "Banking & Finance", size: "Small", website: "abbeymortgagebank.com" },
             { name: "Infinity Trust Mortgage Bank", industry: "Banking & Finance", size: "Small", website: "infinitytrustmortgagebank.com" },
-            
+
             // Technology - Large
             { name: "Flutterwave", industry: "Technology", size: "Large", website: "flutterwave.com" },
             { name: "Paystack", industry: "Technology", size: "Large", website: "paystack.com" },
@@ -211,7 +213,7 @@
             { name: "PalmPay", industry: "Technology", size: "Large", website: "palmpay.com" },
             { name: "TeamApt", industry: "Technology", size: "Large", website: "teamapt.com" },
             { name: "Terragon Group", industry: "Technology", size: "Large", website: "terragongroup.com" },
-            
+
             // Technology - Medium
             { name: "Softcom", industry: "Technology", size: "Medium", website: "softcom.ng" },
             { name: "Curacel", industry: "Technology", size: "Medium", website: "curacel.ai" },
@@ -228,7 +230,7 @@
             { name: "Carbon", industry: "Technology", size: "Medium", website: "getcarbon.co" },
             { name: "Autochek", industry: "Technology", size: "Medium", website: "autochek.africa" },
             { name: "Moniepoint", industry: "Technology", size: "Medium", website: "moniepoint.com" },
-            
+
             // Technology - Small
             { name: "Bankly", industry: "Technology", size: "Small", website: "bankly.ng" },
             { name: "Wallets Africa", industry: "Technology", size: "Small", website: "wallets.africa" },
@@ -245,14 +247,14 @@
             { name: "Sendbox", industry: "Technology", size: "Small", website: "sendbox.co" },
             { name: "Blueloop", industry: "Technology", size: "Small", website: "blueloop.app" },
             { name: "Lemonade Finance", industry: "Technology", size: "Small", website: "lemonade.finance" },
-            
+
             // Telecommunications - Large
             { name: "MTN Nigeria", industry: "Telecommunications", size: "Large", website: "mtnonline.com" },
             { name: "Airtel Nigeria", industry: "Telecommunications", size: "Large", website: "africa.airtel.com" },
             { name: "Globacom", industry: "Telecommunications", size: "Large", website: "gloworld.com" },
             { name: "9mobile", industry: "Telecommunications", size: "Large", website: "9mobile.com.ng" },
             { name: "Starlink Nigeria", industry: "Telecommunications", size: "Large", website: "starlink.com" },
-            
+
             // Telecommunications - Medium
             { name: "ipNX Nigeria", industry: "Telecommunications", size: "Medium", website: "ipnxnigeria.net" },
             { name: "Spectranet", industry: "Telecommunications", size: "Medium", website: "spectranet.com.ng" },
@@ -261,7 +263,7 @@
             { name: "Smile Communications", industry: "Telecommunications", size: "Medium", website: "smile.com.ng" },
             { name: "Tizeti", industry: "Telecommunications", size: "Medium", website: "tizeti.com" },
             { name: "Vodacom Business Nigeria", industry: "Telecommunications", size: "Medium", website: "vodacom.com.ng" },
-            
+
             // Telecommunications - Small
             { name: "FiberOne Broadband", industry: "Telecommunications", size: "Small", website: "fiberone.ng" },
             { name: "Bitflux Communications", industry: "Telecommunications", size: "Small", website: "bitflux.com" },
@@ -271,7 +273,7 @@
             { name: "Cyberspace Network", industry: "Telecommunications", size: "Small", website: "cyberspace.net.ng" },
             { name: "Dotmac Technologies", industry: "Telecommunications", size: "Small", website: "dotmac.ng" },
             { name: "Skymax Integrated Network", industry: "Telecommunications", size: "Small", website: "skymaxng.com" },
-            
+
             // Oil & Gas - Large
             { name: "Nigerian National Petroleum Corporation", industry: "Oil & Gas", size: "Large", website: "nnpcgroup.com" },
             { name: "Shell Nigeria", industry: "Oil & Gas", size: "Large", website: "shell.com.ng" },
@@ -284,7 +286,7 @@
             { name: "MRS Oil Nigeria", industry: "Oil & Gas", size: "Large", website: "mrsoilnigplc.net" },
             { name: "Sahara Group", industry: "Oil & Gas", size: "Large", website: "sahara-group.com" },
             { name: "Ardova PLC", industry: "Oil & Gas", size: "Large", website: "ardovaplc.com" },
-            
+
             // Oil & Gas - Medium
             { name: "Aradel Holdings", industry: "Oil & Gas", size: "Medium", website: "aradelholdings.com" },
             { name: "Eterna PLC", industry: "Oil & Gas", size: "Medium", website: "eternaplc.com" },
@@ -296,7 +298,7 @@
             { name: "A.A. Rano", industry: "Oil & Gas", size: "Medium", website: "aarano.com" },
             { name: "Rainoil Limited", industry: "Oil & Gas", size: "Medium", website: "rainoilltd.com" },
             { name: "Techno Oil", industry: "Oil & Gas", size: "Medium", website: "technooil.com" },
-            
+
             // Oil & Gas - Small
             { name: "Nepal Oil and Gas Services", industry: "Oil & Gas", size: "Small", website: "nepaloilgas.com" },
             { name: "Petrocam Trading Nigeria", industry: "Oil & Gas", size: "Small", website: "petrocam-ltd.com" },
@@ -306,22 +308,22 @@
             { name: "Bono Energy", industry: "Oil & Gas", size: "Small", website: "bonoenergy.com" },
             { name: "Mainland Oil and Gas", industry: "Oil & Gas", size: "Small", website: "mainlandoilgas.com" },
             { name: "Fatgbems Petroleum", industry: "Oil & Gas", size: "Small", website: "fatgbems.com" },
-            
+
             // Manufacturing - Large
             { name: "Dangote Group", industry: "Manufacturing", size: "Large", website: "dangote.com" },
             { name: "BUA Group", industry: "Manufacturing", size: "Large", website: "buagroup.com" },
             { name: "Flour Mills of Nigeria", industry: "Manufacturing", size: "Large", website: "fmnplc.com" },
             { name: "Nestle Nigeria", industry: "Manufacturing", size: "Large", website: "nestle-cwa.com" },
             { name: "Nigerian Breweries", industry: "Manufacturing", size: "Large", website: "nbplc.com" },
-            { name: "Unilever Nigeria", industry: "Manufacturing", size: "Large", website: "unilever.com.ng" },
-            { name: "PZ Cussons Nigeria", industry: "Manufacturing", size: "Large", website: "pzcussons.com.ng" },
+            { name: "Unilever Nigeria", industry: "Manufacturing", size: "Large", website: "unilever.com" },
+            { name: "PZ Cussons Nigeria", industry: "Manufacturing", size: "Large", website: "pzcussons.com" },
             { name: "Cadbury Nigeria", industry: "Manufacturing", size: "Large", website: "cadbury.com.ng" },
             { name: "Lafarge Africa", industry: "Manufacturing", size: "Large", website: "lafarge.com.ng" },
             { name: "Guinness Nigeria", industry: "Manufacturing", size: "Large", website: "guinness-nigeria.com" },
             { name: "International Breweries", industry: "Manufacturing", size: "Large", website: "internationalbreweriesplc.com" },
             { name: "Honeywell Flour Mills", industry: "Manufacturing", size: "Large", website: "honeywellflour.com" },
             { name: "WAMCO (FrieslandCampina)", industry: "Manufacturing", size: "Large", website: "frieslandcampina.com.ng" },
-            
+
             // Manufacturing - Medium
             { name: "May & Baker Nigeria", industry: "Manufacturing", size: "Medium", website: "may-baker.com" },
             { name: "Beta Glass", industry: "Manufacturing", size: "Medium", website: "frigoglass.com" },
@@ -335,7 +337,7 @@
             { name: "Champion Breweries", industry: "Manufacturing", size: "Medium", website: "championbreweries.com" },
             { name: "NASCON Allied Industries", industry: "Manufacturing", size: "Medium", website: "nasconplc.com" },
             { name: "Fidson Healthcare", industry: "Manufacturing", size: "Medium", website: "fidson.com" },
-            
+
             // Manufacturing - Small
             { name: "Chellaram Industries", industry: "Manufacturing", size: "Small", website: "chellaramindustries.com" },
             { name: "Multitrex Integrated Foods", industry: "Manufacturing", size: "Small", website: "multitrex.com" },
@@ -348,7 +350,7 @@
             { name: "Mamuda Group", industry: "Manufacturing", size: "Small", website: "mamuda.com" },
             { name: "Envoy Group", industry: "Manufacturing", size: "Small", website: "envoygrp.com" },
             { name: "Beloxxi Industries", industry: "Manufacturing", size: "Small", website: "beloxxiindustries.com" },
-            
+
             // Agriculture - Large
             { name: "Olam Nigeria", industry: "Agriculture", size: "Large", website: "olamgroup.com" },
             { name: "FMN Agro-Allied", industry: "Agriculture", size: "Large", website: "fmnplc.com" },
@@ -356,7 +358,7 @@
             { name: "Okomu Oil Palm Company", industry: "Agriculture", size: "Large", website: "okomuoilplc.net" },
             { name: "Dansa Foods", industry: "Agriculture", size: "Large", website: "dansafoods.com" },
             { name: "Livestock Feeds", industry: "Agriculture", size: "Large", website: "livestockfeedsplc.com" },
-            
+
             // Agriculture - Medium
             { name: "Babban Gona", industry: "Agriculture", size: "Medium", website: "babbangona.com" },
             { name: "Farmcrowdy", industry: "Agriculture", size: "Medium", website: "farmcrowdy.com" },
@@ -367,7 +369,7 @@
             { name: "AFEX Nigeria", industry: "Agriculture", size: "Medium", website: "afex.com.ng" },
             { name: "Agrecourse", industry: "Agriculture", size: "Medium", website: "agrecourse.com" },
             { name: "Probity Farms", industry: "Agriculture", size: "Medium", website: "probityfarms.com" },
-            
+
             // Agriculture - Small
             { name: "PS Nutraceuticals", industry: "Agriculture", size: "Small", website: "psnutra.com" },
             { name: "Farmpower", industry: "Agriculture", size: "Small", website: "farmpowerng.com" },
@@ -378,7 +380,7 @@
             { name: "Agrihub", industry: "Agriculture", size: "Small", website: "agrihubnigeria.com" },
             { name: "Psaltry International", industry: "Agriculture", size: "Small", website: "psaltryinternational.com" },
             { name: "Vegefresh Company", industry: "Agriculture", size: "Small", website: "vegefresh.com.ng" },
-            
+
             // Retail - Large
             { name: "Shoprite Nigeria", industry: "Retail", size: "Large", website: "shoprite.com.ng" },
             { name: "SPAR Nigeria", industry: "Retail", size: "Large", website: "sparinternational.com" },
@@ -387,7 +389,7 @@
             { name: "The Game Store", industry: "Retail", size: "Large", website: "game.com.ng" },
             { name: "PEP Stores", industry: "Retail", size: "Large", website: "pepstores.com" },
             { name: "Ruff 'n' Tumble", industry: "Retail", size: "Large", website: "ruffntumble.com.ng" },
-            
+
             // Retail - Medium
             { name: "Justrite", industry: "Retail", size: "Medium", website: "justritesuperstore.com" },
             { name: "Prince Ebeano Supermarket", industry: "Retail", size: "Medium", website: "princeebeano.com" },
@@ -397,7 +399,7 @@
             { name: "Supersaver", industry: "Retail", size: "Medium", website: "supersaver.ng" },
             { name: "FoodCo", industry: "Retail", size: "Medium", website: "foodcosonline.com" },
             { name: "H-Medix", industry: "Retail", size: "Medium", website: "hmedix.com" },
-            
+
             // Retail - Small
             { name: "The Home Store", industry: "Retail", size: "Small", website: "thehomestore.ng" },
             { name: "Jara", industry: "Retail", size: "Small", website: "jara.ng" },
@@ -407,14 +409,14 @@
             { name: "La Pointe", industry: "Retail", size: "Small", website: "lapointestore.com" },
             { name: "Mondo", industry: "Retail", size: "Small", website: "mondolife.com.ng" },
             { name: "Miniso Nigeria", industry: "Retail", size: "Small", website: "miniso.ng" },
-            
+
             // E-commerce - Large
             { name: "Jumia Nigeria", industry: "E-commerce", size: "Large", website: "jumia.com.ng" },
             { name: "Konga", industry: "E-commerce", size: "Large", website: "konga.com" },
             { name: "Jiji", industry: "E-commerce", size: "Large", website: "jiji.ng" },
             { name: "Payporte", industry: "E-commerce", size: "Large", website: "payporte.com" },
             { name: "DealDey", industry: "E-commerce", size: "Large", website: "dealdey.com" },
-            
+
             // E-commerce - Medium
             { name: "Ajebo Market", industry: "E-commerce", size: "Medium", website: "ajebomarket.com" },
             { name: "Supermart", industry: "E-commerce", size: "Medium", website: "supermart.ng" },
@@ -422,7 +424,7 @@
             { name: "Wakanow", industry: "E-commerce", size: "Medium", website: "wakanow.com" },
             { name: "MyADS", industry: "E-commerce", size: "Medium", website: "myads.ng" },
             { name: "Cars45", industry: "E-commerce", size: "Medium", website: "cars45.com" },
-            
+
             // E-commerce - Small
             { name: "Fashpa", industry: "E-commerce", size: "Small", website: "fashpa.com" },
             { name: "Nairabox", industry: "E-commerce", size: "Small", website: "nairabox.com" },
@@ -432,7 +434,7 @@
             { name: "Qeturah", industry: "E-commerce", size: "Small", website: "qeturah.com" },
             { name: "Foodlocker", industry: "E-commerce", size: "Small", website: "foodlocker.com.ng" },
             { name: "Tradesafe", industry: "E-commerce", size: "Small", website: "tradesafe.ng" },
-            
+
             // Healthcare - Large
             { name: "Reddington Hospital", industry: "Healthcare", size: "Large", website: "reddingtonhospital.com" },
             { name: "Lagoon Hospitals", industry: "Healthcare", size: "Large", website: "lagoonhospitals.com" },
@@ -440,7 +442,7 @@
             { name: "EverCare Hospital", industry: "Healthcare", size: "Large", website: "evercaregroup.com" },
             { name: "Nizamiye Hospital", industry: "Healthcare", size: "Large", website: "nizamiyehospital.com" },
             { name: "Vedic Lifecare Hospital", industry: "Healthcare", size: "Large", website: "vediclifecare.com" },
-            
+
             // Healthcare - Medium
             { name: "CarePoint Hospitals", industry: "Healthcare", size: "Medium", website: "carepointng.com" },
             { name: "R-Jolad Hospital", industry: "Healthcare", size: "Medium", website: "rjoladhospital.com" },
@@ -448,7 +450,7 @@
             { name: "The Bridge Clinic", industry: "Healthcare", size: "Medium", website: "thebridgeclinic.com" },
             { name: "George's Memorial Medical Centre", industry: "Healthcare", size: "Medium", website: "georgesmedical.org" },
             { name: "Lily Hospitals", industry: "Healthcare", size: "Medium", website: "lilyhospitals.com" },
-            
+
             // Healthcare - Small
             { name: "Paelon Memorial Hospital", industry: "Healthcare", size: "Small", website: "paelonmemorial.com" },
             { name: "Tabitha Medical Center", industry: "Healthcare", size: "Small", website: "tabithamedical.com" },
@@ -456,14 +458,14 @@
             { name: "Broad Street Hospital", industry: "Healthcare", size: "Small", website: "broadstreethospital.com" },
             { name: "Bee-Hees Hospital", industry: "Healthcare", size: "Small", website: "beeheeshospital.org" },
             { name: "Lifeline Children's Hospital", industry: "Healthcare", size: "Small", website: "lifelinechildrenshospital.com" },
-            
+
             // Pharmaceutical - Large
             { name: "Emzor Pharmaceutical", industry: "Pharmaceutical", size: "Large", website: "emzorpharma.com" },
             { name: "Fidson Healthcare", industry: "Pharmaceutical", size: "Large", website: "fidson.com" },
             { name: "May & Baker Nigeria", industry: "Pharmaceutical", size: "Large", website: "may-baker.com" },
             { name: "GlaxoSmithKline Nigeria", industry: "Pharmaceutical", size: "Large", website: "gsk.com" },
             { name: "Pfizer Nigeria", industry: "Pharmaceutical", size: "Large", website: "pfizer.com.ng" },
-            
+
             // Pharmaceutical - Medium
             { name: "Neimeth International Pharmaceuticals", industry: "Pharmaceutical", size: "Medium", website: "neimeth.com.ng" },
             { name: "Swiss Pharma Nigeria", industry: "Pharmaceutical", size: "Medium", website: "swipha.net" },
@@ -471,7 +473,7 @@
             { name: "Drugfield Pharmaceuticals", industry: "Pharmaceutical", size: "Medium", website: "drugfieldpharma.com" },
             { name: "Mopson Pharmaceutical", industry: "Pharmaceutical", size: "Medium", website: "mopsonpharmaceuticals.com" },
             { name: "Ranbaxy Nigeria", industry: "Pharmaceutical", size: "Medium", website: "ranbaxy.com.ng" },
-            
+
             // Pharmaceutical - Small
             { name: "Daily-Need Industries", industry: "Pharmaceutical", size: "Small", website: "dailyneedindustries.com" },
             { name: "Sagar Vitaceuticals", industry: "Pharmaceutical", size: "Small", website: "sagarvitaceuticals.com" },
@@ -479,112 +481,112 @@
             { name: "SKG Pharma", industry: "Pharmaceutical", size: "Small", website: "skgpharma.com" },
             { name: "Zolon Healthcare", industry: "Pharmaceutical", size: "Small", website: "zolonhealthcare.com" },
             { name: "Therapeutic Laboratories", industry: "Pharmaceutical", size: "Small", website: "theralabs.com.ng" },
-            
+
             // Education - Large
             { name: "Covenant University", industry: "Education", size: "Large", website: "covenantuniversity.edu.ng" },
             { name: "Babcock University", industry: "Education", size: "Large", website: "babcock.edu.ng" },
             { name: "Afe Babalola University", industry: "Education", size: "Large", website: "abuad.edu.ng" },
             { name: "American University of Nigeria", industry: "Education", size: "Large", website: "aun.edu.ng" },
             { name: "Pan-Atlantic University", industry: "Education", size: "Large", website: "pau.edu.ng" },
-            
+
             // Education - Medium
             { name: "Lead British International School", industry: "Education", size: "Medium", website: "leadbritishinternationalschool.org" },
             { name: "Corona Schools", industry: "Education", size: "Medium", website: "coronaschools.org" },
             { name: "Greensprings School", industry: "Education", size: "Medium", website: "greenspringsschool.com" },
             { name: "Chrisland Schools", industry: "Education", size: "Medium", website: "chrislandschools.com" },
             { name: "Grange School", industry: "Education", size: "Medium", website: "grangeschool.com" },
-            
+
             // Education - Small
             { name: "Edubridge Academy", industry: "Education", size: "Small", website: "edubridgeacademy.org" },
             { name: "Masterplan International School", industry: "Education", size: "Small", website: "masterplaninternationalschool.com" },
             { name: "Prime Progress College", industry: "Education", size: "Small", website: "primeprogresscollege.com" },
             { name: "Brookstone Secondary School", industry: "Education", size: "Small", website: "brookstone.sch.ng" },
             { name: "Wisegate Schools", industry: "Education", size: "Small", website: "wisegateschools.com" },
-            
+
             // Real Estate - Large
             { name: "UPDC Real Estate", industry: "Real Estate", size: "Large", website: "updcreit.com" },
             { name: "ARM Properties", industry: "Real Estate", size: "Large", website: "armproperties.com.ng" },
             { name: "Palton Morgan Holdings", industry: "Real Estate", size: "Large", website: "paltonmorgan.com" },
             { name: "Propertymart Real Estate", industry: "Real Estate", size: "Large", website: "propertymartng.com" },
             { name: "Grenadines Homes", industry: "Real Estate", size: "Large", website: "grenadineshomes.com" },
-            
+
             // Real Estate - Medium
             { name: "Haven Homes", industry: "Real Estate", size: "Medium", website: "havenhomes.ng" },
             { name: "Eagle Heights", industry: "Real Estate", size: "Medium", website: "eagleheightsng.com" },
             { name: "Landmark Corporate Realty", industry: "Real Estate", size: "Medium", website: "landmarkcorporaterealty.com" },
             { name: "Lekki Gardens", industry: "Real Estate", size: "Medium", website: "lekkigardens.com" },
             { name: "Mixta Africa", industry: "Real Estate", size: "Medium", website: "mixtafrica.com" },
-            
+
             // Real Estate - Small
             { name: "Alphacrux Properties", industry: "Real Estate", size: "Small", website: "alphacruxproperties.com" },
             { name: "Nedcomoaks Properties", industry: "Real Estate", size: "Small", website: "nedcomoak.com" },
             { name: "Homework Development", industry: "Real Estate", size: "Small", website: "homeworkdev.com" },
             { name: "Brickstone Africa", industry: "Real Estate", size: "Small", website: "brickstone.africa" },
             { name: "Deluxe Residences", industry: "Real Estate", size: "Small", website: "deluxeresidences.com" },
-            
+
             // Entertainment - Large
             { name: "Multichoice Nigeria", industry: "Entertainment", size: "Large", website: "multichoice.com" },
             { name: "Iroko TV", industry: "Entertainment", size: "Large", website: "irokotv.com" },
             { name: "Silverbird Group", industry: "Entertainment", size: "Large", website: "silverbirdgroup.com" },
             { name: "FilmOne Entertainment", industry: "Entertainment", size: "Large", website: "filmoneng.com" },
             { name: "Genesis Cinemas", industry: "Entertainment", size: "Large", website: "genesiscinemas.com" },
-            
+
             // Entertainment - Medium
             { name: "Mavin Records", industry: "Entertainment", size: "Medium", website: "mavinrecords.com" },
             { name: "Empire Mates Entertainment", industry: "Entertainment", size: "Medium", website: "emeblog.net" },
             { name: "Chocolate City Music", industry: "Entertainment", size: "Medium", website: "chocolatecitygroup.com" },
             { name: "Play Network Studios", industry: "Entertainment", size: "Medium", website: "playnetworkstudios.com" },
             { name: "ROK Studios", industry: "Entertainment", size: "Medium", website: "rokstudios.com" },
-            
+
             // Entertainment - Small
             { name: "Accelerate TV", industry: "Entertainment", size: "Small", website: "acceleratetv.com" },
             { name: "Aristokrat Records", industry: "Entertainment", size: "Small", website: "aristokratrecords.com" },
             { name: "Filmhouse Cinemas", industry: "Entertainment", size: "Small", website: "filmhouseng.com" },
             { name: "African Movie Channel", industry: "Entertainment", size: "Small", website: "africanmoviechannel.com" },
             { name: "Ebonylife Media", industry: "Entertainment", size: "Small", website: "ebonylifemedia.com" },
-            
+
             // Transportation - Large
             { name: "Air Peace", industry: "Transportation", size: "Large", website: "flyairpeace.com" },
             { name: "Dana Air", industry: "Transportation", size: "Large", website: "flydanaair.com" },
             { name: "Arik Air", industry: "Transportation", size: "Large", website: "arikair.com" },
             { name: "Green Africa Airways", industry: "Transportation", size: "Large", website: "greenafrica.com" },
             { name: "ABC Transport", industry: "Transportation", size: "Large", website: "abctransport.com" },
-            
+
             // Transportation - Medium
             { name: "GIG Mobility", industry: "Transportation", size: "Medium", website: "gigm.com" },
             { name: "God is Good Motors", industry: "Transportation", size: "Medium", website: "gigm.com" },
             { name: "Treepz", industry: "Transportation", size: "Medium", website: "treepz.com" },
             { name: "Shuttlers", industry: "Transportation", size: "Medium", website: "shuttlers.ng" },
             { name: "Metro Africa Xpress", industry: "Transportation", size: "Medium", website: "max.ng" },
-            
+
             // Transportation - Small
             { name: "Mainland Ferry Services", industry: "Transportation", size: "Small", website: "mainlandferryservices.com" },
             { name: "Chisco Transport", industry: "Transportation", size: "Small", website: "chiscotransport.com.ng" },
             { name: "Cross Country Limited", industry: "Transportation", size: "Small", website: "crosscountryltd.com" },
             { name: "Libra Motors", industry: "Transportation", size: "Small", website: "libramotors.com" },
             { name: "Young Shall Grow", industry: "Transportation", size: "Small", website: "youngshallgrow.com.ng" },
-            
+
             // Hospitality - Large
             { name: "Transcorp Hotels", industry: "Hospitality", size: "Large", website: "transcorphotels.com" },
             { name: "Eko Hotels & Suites", industry: "Hospitality", size: "Large", website: "ekohotels.com" },
             { name: "Radisson Blu Lagos", industry: "Hospitality", size: "Large", website: "radissonblulagos.com" },
             { name: "Sheraton Lagos Hotel", industry: "Hospitality", size: "Large", website: "sheratonlagos.com" },
             { name: "Federal Palace Hotel", industry: "Hospitality", size: "Large", website: "federalpalacehotel.com" },
-            
+
             // Hospitality - Medium
             { name: "Lagos Oriental Hotel", industry: "Hospitality", size: "Medium", website: "lagosorientalhotel.com" },
             { name: "Southern Sun Ikoyi", industry: "Hospitality", size: "Medium", website: "southernsun.com" },
             { name: "Four Points by Sheraton", industry: "Hospitality", size: "Medium", website: "fourpointslagos.com" },
             { name: "Ibis Lagos Airport", industry: "Hospitality", size: "Medium", website: "ibis.com" },
             { name: "Best Western Plus", industry: "Hospitality", size: "Medium", website: "bestwestern.com" },
-            
+
             // Hospitality - Small
             { name: "Victoria Crown Plaza", industry: "Hospitality", size: "Small", website: "victoriacrownplaza.com" },
             { name: "The George Hotel", industry: "Hospitality", size: "Small", website: "thegeorgelagos.com" },
             { name: "Presken Hotel", industry: "Hospitality", size: "Small", website: "preskenhotel.com" },
             { name: "Swiss International Mabisel", industry: "Hospitality", size: "Small", website: "swissinternationalmabisel.com" },
             { name: "Protea Hotel Select", industry: "Hospitality", size: "Small", website: "proteahotels.com" },
-            
+
             // Additional companies to reach 600
             { name: "HiiT PLC", industry: "Technology", size: "Small", website: "hiit.com.ng" },
             { name: "Courteville Business Solutions", industry: "Technology", size: "Medium", website: "courtevillegroup.com" },
@@ -690,7 +692,7 @@
             { name: "Excel E&P", industry: "Oil & Gas", size: "Small", website: "exceleandp.com" },
             { name: "First E&P", industry: "Oil & Gas", size: "Medium", website: "first-epdc.com" },
             { name: "Prime Atlantic", industry: "Oil & Gas", size: "Small", website: "primeatlantic.com" },
-            
+
             // Additional Banking & Finance Companies - Medium & Small
             { name: "Zenith Bank Asset Management", industry: "Banking & Finance", size: "Medium", website: "zenith-am.com" },
             { name: "ARM Investment Managers", industry: "Banking & Finance", size: "Medium", website: "arm.com.ng" },
@@ -707,7 +709,7 @@
             { name: "Fina Trust Microfinance Bank", industry: "Banking & Finance", size: "Small", website: "finatrust.com" },
             { name: "Parkway Microfinance Bank", industry: "Banking & Finance", size: "Small", website: "parkwaymfb.com" },
             { name: "Mutual Benefits Microfinance Bank", industry: "Banking & Finance", size: "Small", website: "mutualbenefitsmfb.com" },
-            
+
             // Additional Technology Companies
             { name: "Semicolon Africa", industry: "Technology", size: "Medium", website: "semicolon.africa" },
             { name: "Decagon", industry: "Technology", size: "Medium", website: "decagon.institute" },
@@ -733,7 +735,7 @@
             { name: "Maraphone", industry: "Technology", size: "Medium", website: "mara.com" },
             { name: "AltSchool Africa", industry: "Technology", size: "Medium", website: "altschoolafrica.com" },
             { name: "TalentQL", industry: "Technology", size: "Small", website: "talentql.com" },
-            
+
             // Additional Manufacturing Companies
             { name: "Sumal Foods Limited", industry: "Manufacturing", size: "Medium", website: "sumalfoods.com" },
             { name: "Olam Nigeria Limited", industry: "Manufacturing", size: "Large", website: "olamgroup.com" },
@@ -753,7 +755,7 @@
             { name: "Sona Group", industry: "Manufacturing", size: "Medium", website: "sonagroup.com" },
             { name: "CFAO Nigeria", industry: "Manufacturing", size: "Medium", website: "cfao-nigeria.com" },
             { name: "Inlaks Computers", industry: "Technology", size: "Medium", website: "inlaks.com" },
-            
+
             // Additional Oil & Gas Companies
             { name: "Antan Producing", industry: "Oil & Gas", size: "Medium", website: "antanproducing.com" },
             { name: "Oriental Energy Resources", industry: "Oil & Gas", size: "Medium", website: "orientalenergy.com" },
@@ -769,7 +771,7 @@
             { name: "Summit Oil International", industry: "Oil & Gas", size: "Medium", website: "summitoil.ng" },
             { name: "Waltersmith Petroman", industry: "Oil & Gas", size: "Medium", website: "waltersmithpg.com" },
             { name: "Oriental Energy Resources", industry: "Oil & Gas", size: "Medium", website: "orientalenergy.com" },
-            
+
             // Additional Agricultural Companies
             { name: "Ellah Lakes", industry: "Agriculture", size: "Medium", website: "ellahlakes.com" },
             { name: "Best Foods Global", industry: "Agriculture", size: "Medium", website: "bestfoodsglobal.com" },
@@ -789,7 +791,7 @@
             { name: "Tomato Jos", industry: "Agriculture", size: "Medium", website: "tomatojos.net" },
             { name: "AgroCentre", industry: "Agriculture", size: "Medium", website: "agrocentre.ng" },
             { name: "Plantation Industries", industry: "Agriculture", size: "Medium", website: "plantationindustries.com.ng" },
-            
+
             // Additional Healthcare Companies
             { name: "Synlab Nigeria", industry: "Healthcare", size: "Medium", website: "synlab.ng" },
             { name: "PathCare Nigeria", industry: "Healthcare", size: "Medium", website: "pathcarenigeria.com" },
@@ -801,7 +803,7 @@
             { name: "Euracare Multi-Specialist Hospital", industry: "Healthcare", size: "Medium", website: "euracare.com.ng" },
             { name: "Healthy U Nutrition", industry: "Healthcare", size: "Small", website: "healthyunutrition.com.ng" },
             { name: "Gold Cross Hospital", industry: "Healthcare", size: "Medium", website: "goldcrosshospital.com" },
-            
+
             // Additional Educational Institutions
             { name: "University of Lagos", industry: "Education", size: "Large", website: "unilag.edu.ng" },
             { name: "University of Ibadan", industry: "Education", size: "Large", website: "ui.edu.ng" },
@@ -818,7 +820,7 @@
             { name: "Elizade University", industry: "Education", size: "Medium", website: "elizadeuniversity.edu.ng" },
             { name: "Federal University Oye-Ekiti", industry: "Education", size: "Medium", website: "fuoye.edu.ng" },
             { name: "Fountain University", industry: "Education", size: "Medium", website: "fountainuniversity.edu.ng" },
-            
+
             // Additional Pharmaceutical Companies
             { name: "Emzor Pharmaceutical", industry: "Pharmaceutical", size: "Large", website: "emzorpharma.com" },
             { name: "Fidson Healthcare", industry: "Pharmaceutical", size: "Large", website: "fidson.com" },
@@ -835,7 +837,7 @@
             { name: "DANA Pharmaceuticals", industry: "Pharmaceutical", size: "Medium", website: "danapharma.com.ng" },
             { name: "Pharma-Deko", industry: "Pharmaceutical", size: "Medium", website: "pharmadeko.com" },
             { name: "GSK Nigeria", industry: "Pharmaceutical", size: "Large", website: "gsk.com/en-ng" },
-            
+
             // Additional Retail Companies
             { name: "Retail Supermarkets Nigeria (SPAR)", industry: "Retail", size: "Large", website: "sparnigeria.com" },
             { name: "Addide Supermarket", industry: "Retail", size: "Medium", website: "addide.com.ng" },
@@ -855,7 +857,7 @@
             { name: "Medplus Pharmacy", industry: "Retail", size: "Medium", website: "medplusnigeria.com" },
             { name: "Casabella", industry: "Retail", size: "Medium", website: "casabellainteriors.com" },
             { name: "Montaigne Place", industry: "Retail", size: "Medium", website: "montaigneplace.com" },
-            
+
             // Additional E-commerce Companies
             { name: "Alerzo", industry: "E-commerce", size: "Medium", website: "alerzo.com" },
             { name: "TradeDepot", industry: "E-commerce", size: "Medium", website: "tradedepot.co" },
@@ -869,7 +871,7 @@
             { name: "Comma", industry: "E-commerce", size: "Small", website: "usecomma.xyz" },
             { name: "Foodcourt", industry: "E-commerce", size: "Small", website: "foodcourt.ng" },
             { name: "Jumia Food", industry: "E-commerce", size: "Medium", website: "food.jumia.com.ng" },
-            
+
             // Additional Financial Technology Companies
             { name: "Kippa", industry: "Technology", size: "Small", website: "kippa.africa" },
             { name: "Lendsqr", industry: "Technology", size: "Small", website: "lendsqr.com" },
@@ -885,7 +887,7 @@
             { name: "Branch", industry: "Banking & Finance", size: "Medium", website: "branch.com.ng" },
             { name: "Fairmoney", industry: "Banking & Finance", size: "Medium", website: "fairmoney.io" },
             { name: "Renmoney", industry: "Banking & Finance", size: "Medium", website: "renmoney.com" },
-            
+
             // Additional Insurance Companies
             { name: "AXA Mansard Insurance", industry: "Banking & Finance", size: "Large", website: "axamansard.com" },
             { name: "AIICO Insurance", industry: "Banking & Finance", size: "Large", website: "aiicoplc.com" },
@@ -900,7 +902,7 @@
             { name: "Custodian Investment", industry: "Banking & Finance", size: "Medium", website: "custodianinvestment.com" },
             { name: "Regency Alliance Insurance", industry: "Banking & Finance", size: "Small", website: "regencyalliance.com" },
             { name: "Zenith Insurance", industry: "Banking & Finance", size: "Medium", website: "zenithinsuranceng.com" },
-            
+
             // Additional Construction & Real Estate Companies
             { name: "Julius Berger Nigeria", industry: "Real Estate", size: "Large", website: "julius-berger.com" },
             { name: "ITB Nigeria", industry: "Real Estate", size: "Medium", website: "itbng.com" },
@@ -918,7 +920,7 @@
             { name: "Hi-Tech Construction", industry: "Real Estate", size: "Medium", website: "hi-techconstruction.com" },
             { name: "James Cubitt Architects", industry: "Real Estate", size: "Medium", website: "jamescubittng.com" },
             { name: "Prowess Engineering", industry: "Real Estate", size: "Small", website: "prowessengineering.com" },
-            
+
             // Additional Transportation Companies
             { name: "Peace Mass Transit", industry: "Transportation", size: "Medium", website: "pmt.ng" },
             { name: "GIGM", industry: "Transportation", size: "Medium", website: "gigm.com" },
@@ -937,7 +939,7 @@
             { name: "Lagos Bus Services Ltd", industry: "Transportation", size: "Medium", website: "lbsl.com.ng" },
             { name: "Lagos State Ferry Services", industry: "Transportation", size: "Medium", website: "lagferry.com.ng" },
             { name: "Lagos State Rail Mass Transit", industry: "Transportation", size: "Large", website: "lamata-ng.com" },
-            
+
             // Additional Hospitality Companies
             { name: "BON Hotels", industry: "Hospitality", size: "Medium", website: "bonhotels.com" },
             { name: "Marriott Hotels", industry: "Hospitality", size: "Large", website: "marriott.com" },
@@ -953,7 +955,7 @@
             { name: "Fraser Suites", industry: "Hospitality", size: "Medium", website: "fraserhospitality.com" },
             { name: "Lagos Continental Hotel", industry: "Hospitality", size: "Large", website: "lasgidihostels.com" },
             { name: "iROKOtv", industry: "Entertainment", size: "Medium", website: "irokotv.com" },
-            
+
             // Additional Entertainment Companies
             { name: "Filmhouse Cinemas", industry: "Entertainment", size: "Medium", website: "filmhouseng.com" },
             { name: "Genesis Cinemas", industry: "Entertainment", size: "Medium", website: "genesiscinemas.com" },
@@ -975,7 +977,7 @@
             { name: "Beat FM", industry: "Entertainment", size: "Medium", website: "thebeat979fm.com" },
             { name: "Wazobia FM", industry: "Entertainment", size: "Medium", website: "wazobiafm.com" },
             { name: "Smooth FM", industry: "Entertainment", size: "Small", website: "smoothfm1055.com" },
-            
+
             // Additional Telecommunications Companies
             { name: "Airtel Business", industry: "Telecommunications", size: "Large", website: "airtel.com.ng/business" },
             { name: "MTN Business", industry: "Telecommunications", size: "Large", website: "mtnbusiness.com.ng" },
@@ -990,7 +992,7 @@
             { name: "Broadbased Communications", industry: "Telecommunications", size: "Small", website: "broadbased.net" },
             { name: "Smile Communications", industry: "Telecommunications", size: "Medium", website: "smile.com.ng" },
             { name: "ntel", industry: "Telecommunications", size: "Medium", website: "ntel.com.ng" },
-            
+
             // More Companies to reach 1000 total
             { name: "CardinalStone Capital Advisers", industry: "Banking & Finance", size: "Small", website: "cardinalstone.com" },
             { name: "Alpha Morgan Capital", industry: "Banking & Finance", size: "Small", website: "alphamorgancapital.com" },
@@ -1033,7 +1035,366 @@
             { name: "RED Tech", industry: "Technology", size: "Small", website: "red.africa" },
             { name: "Xerde Limited", industry: "Technology", size: "Small", website: "xerde.co" },
             { name: "WhiteSpaces", industry: "Technology", size: "Small", website: "whitespaces.ng" },
-            { name: "Migo", industry: "Technology", size: "Medium", website: "migo.money" }
+            { name: "Migo", industry: "Technology", size: "Medium", website: "migo.money" },
+
+            // FMCG Companies - Large
+            { name: "Nestlé Nigeria", industry: "FMCG", size: "Large", website: "nestle-cwa.com" },
+            { name: "Unilever Nigeria", industry: "FMCG", size: "Large", website: "unilever.com.ng" },
+            { name: "PZ Cussons Nigeria", industry: "FMCG", size: "Large", website: "pzcussons.com.ng" },
+            { name: "Dangote Sugar Refinery", industry: "FMCG", size: "Large", website: "dangotesugar.com.ng" },
+            { name: "Nigerian Breweries", industry: "FMCG", size: "Large", website: "nbplc.com" },
+            { name: "Cadbury Nigeria", industry: "FMCG", size: "Large", website: "cadbury.com.ng" },
+            { name: "Guinness Nigeria", industry: "FMCG", size: "Large", website: "guinness-nigeria.com" },
+            { name: "Flour Mills of Nigeria", industry: "FMCG", size: "Large", website: "fmnplc.com" },
+            { name: "Honeywell Flour Mills", industry: "FMCG", size: "Large", website: "honeywellflour.com" },
+            { name: "FrieslandCampina WAMCO", industry: "FMCG", size: "Large", website: "frieslandcampina.com.ng" },
+            { name: "Dufil Prima Foods", industry: "FMCG", size: "Large", website: "dufil.com" },
+            { name: "Tropical General Investments", industry: "FMCG", size: "Large", website: "tgigroup.com" },
+            { name: "GlaxoSmithKline Consumer", industry: "FMCG", size: "Large", website: "gsk.com" },
+            { name: "Nigerian Bottling Company", industry: "FMCG", size: "Large", website: "nbcnigeria.com" },
+            { name: "Chi Limited", industry: "FMCG", size: "Large", website: "chilimited.com" },
+            { name: "Seven-Up Bottling Company", industry: "FMCG", size: "Large", website: "sevenup.org" },
+            { name: "UAC Foods", industry: "FMCG", size: "Large", website: "uacnplc.com" },
+            { name: "Olam Nigeria", industry: "FMCG", size: "Large", website: "olamgroup.com" },
+            { name: "Promasidor Nigeria", industry: "FMCG", size: "Large", website: "promasidornigeria.com" },
+            { name: "Coca-Cola Nigeria", industry: "FMCG", size: "Large", website: "coca-cola.com.ng" },
+
+            // FMCG Companies - Medium
+            { name: "Sundry Foods Limited", industry: "FMCG", size: "Medium", website: "sundryfoods.com" },
+            { name: "FAPMAN (Food & Agricultural Products Ltd)", industry: "FMCG", size: "Medium", website: "fapman.ng" },
+            { name: "Rite Foods Limited", industry: "FMCG", size: "Medium", website: "ritefood.com" },
+            { name: "Beloxxi Industries Limited", industry: "FMCG", size: "Medium", website: "beloxxiindustries.com" },
+            { name: "Ajeast Nigeria Limited", industry: "FMCG", size: "Medium", website: "ajeastnigeria.com" },
+            { name: "OK Foods", industry: "FMCG", size: "Medium", website: "ok-foods.com" },
+            { name: "Food Concepts (Owners of Chicken Republic)", industry: "FMCG", size: "Medium", website: "foodconceptsplc.com" },
+            { name: "Appropriately Africa Foods", industry: "FMCG", size: "Medium", website: "aafricafoods.com" },
+            { name: "Leventis Foods", industry: "FMCG", size: "Medium", website: "leventisfoods.com" },
+            { name: "Grand Cereals Limited", industry: "FMCG", size: "Medium", website: "grandcereals.com" },
+            { name: "Lacasera Company", industry: "FMCG", size: "Medium", website: "lacasera.com.ng" },
+            { name: "Erisco Foods Limited", industry: "FMCG", size: "Medium", website: "eriscofoods.com" },
+            { name: "Northern Noodles Limited", industry: "FMCG", size: "Medium", website: "northernnoodles.com" },
+            { name: "De-United Foods Industries (DUFIL)", industry: "FMCG", size: "Medium", website: "dufil.com" },
+            { name: "BUA Foods", industry: "FMCG", size: "Medium", website: "buafoods.com" },
+            { name: "Power Oil (Raffles Oil)", industry: "FMCG", size: "Medium", website: "poweroil.ng" },
+            { name: "Devon King's (PZ Wilmar)", industry: "FMCG", size: "Medium", website: "devonkings.com" },
+            { name: "Golden Penny Foods", industry: "FMCG", size: "Medium", website: "goldenpenny-foods.com" },
+            { name: "Mamador (PZ Wilmar)", industry: "FMCG", size: "Medium", website: "mamador.com.ng" },
+            { name: "Big Treat", industry: "FMCG", size: "Medium", website: "bigtreatnigeria.com" },
+            { name: "Bakhresa Group", industry: "FMCG", size: "Medium", website: "bakhresa.com" },
+            { name: "Multipro Consumer Products", industry: "FMCG", size: "Medium", website: "tolaram.com/businesses/fmcg" },
+            { name: "Amo Group", industry: "FMCG", size: "Medium", website: "amobykes.com" },
+            { name: "Pure Flour Mills", industry: "FMCG", size: "Medium", website: "pureflour.com.ng" },
+            { name: "Kellogs-Tolaram", industry: "FMCG", size: "Medium", website: "kelloggs.com.ng" },
+            { name: "Indorama Eleme Petrochemicals", industry: "FMCG", size: "Medium", website: "indorama.com" },
+            { name: "Terra Seasoning Cubes", industry: "FMCG", size: "Medium", website: "terracubes.com" },
+            { name: "Daraju Industries (Makers of MyMy noodles)", industry: "FMCG", size: "Medium", website: "daraju.com" },
+            { name: "Mamuda Group", industry: "FMCG", size: "Medium", website: "mamuda.com" },
+            { name: "Lush Hair", industry: "FMCG", size: "Medium", website: "lushhair.com" },
+
+            // FMCG Companies - Small
+            { name: "Baton Nigeria", industry: "FMCG", size: "Small", website: "batonnigeria.com" },
+            { name: "Tosypat Industries", industry: "FMCG", size: "Small", website: "tosypatindustries.com" },
+            { name: "Brides & Beyond", industry: "FMCG", size: "Small", website: "bridesandbeyond.com.ng" },
+            { name: "ST Foods", industry: "FMCG", size: "Small", website: "stfoods.com.ng" },
+            { name: "Sigma Pensions", industry: "FMCG", size: "Small", website: "sigmapensions.com" },
+            { name: "Wilson's Juice Co", industry: "FMCG", size: "Small", website: "wilsonsjuiceco.com" },
+            { name: "Sycamore Integrated Solutions", industry: "FMCG", size: "Small", website: "sycamoreintegrated.com" },
+            { name: "Sundry Markets Limited", industry: "FMCG", size: "Small", website: "sundrymarkets.com" },
+            { name: "Brain and Hammers Limited", industry: "FMCG", size: "Small", website: "brainandhammers.com" },
+            { name: "Tolaram Group", industry: "FMCG", size: "Small", website: "tolaram.com" },
+            { name: "ReelFruit", industry: "FMCG", size: "Small", website: "reelfruit.com" },
+            { name: "Nuts About Cakes", industry: "FMCG", size: "Small", website: "nutsaboutcakes.com" },
+            { name: "Hans & René", industry: "FMCG", size: "Small", website: "hansandrene.com" },
+            { name: "Simpli Foods", industry: "FMCG", size: "Small", website: "simplifoods.com.ng" },
+            { name: "Malena Natural Products", industry: "FMCG", size: "Small", website: "malenanatural.com" },
+            { name: "Iya Foods", industry: "FMCG", size: "Small", website: "iyafoods.com" },
+            { name: "Veggie Victory", industry: "FMCG", size: "Small", website: "veggievictory.com" },
+            { name: "Nature's Bounty Foods", industry: "FMCG", size: "Small", website: "naturesbountyfoods.com.ng" },
+            { name: "Sona Agro Allied Foods", industry: "FMCG", size: "Small", website: "sonaagroallied.com" },
+            { name: "Ziza Foods", industry: "FMCG", size: "Small", website: "zizafoods.com" },
+            { name: "Botosoft Technologies", industry: "FMCG", size: "Small", website: "botosoft.com.ng" },
+            { name: "Saro Agro Sciences", industry: "FMCG", size: "Small", website: "saroafrica.com" },
+            { name: "Mount Caramel Foods", industry: "FMCG", size: "Small", website: "mountcarmelfoodsng.com" },
+            { name: "Organic Life Plus", industry: "FMCG", size: "Small", website: "organiclifeplus.com" },
+            { name: "Food Palace", industry: "FMCG", size: "Small", website: "foodpalace.com.ng" },
+            { name: "Biobak Industries", industry: "FMCG", size: "Small", website: "biobakindustries.com" },
+            { name: "Kotco Foods", industry: "FMCG", size: "Small", website: "kotcofoods.com" },
+            { name: "Pure Creek Foods", industry: "FMCG", size: "Small", website: "purecreekfoods.com" },
+            { name: "Integro Foods", industry: "FMCG", size: "Small", website: "integrofoods.com" },
+            { name: "Symrise Nigeria", industry: "FMCG", size: "Small", website: "symrise.com/ng" },
+
+            // Nigerian Startups - Technology & Fintech
+            { name: "Flutterwave", industry: "Startup", size: "Medium", website: "flutterwave.com" },
+            { name: "Paystack", industry: "Startup", size: "Medium", website: "paystack.com" },
+            { name: "Piggyvest", industry: "Startup", size: "Medium", website: "piggyvest.com" },
+            { name: "Kuda", industry: "Startup", size: "Medium", website: "kuda.com" },
+            { name: "Bamboo", industry: "Startup", size: "Small", website: "investbamboo.com" },
+            { name: "Risevest", industry: "Startup", size: "Small", website: "risevest.com" },
+            { name: "Chaka", industry: "Startup", size: "Small", website: "chaka.com" },
+            { name: "Cowrywise", industry: "Startup", size: "Medium", website: "cowrywise.com" },
+            { name: "Carbon", industry: "Startup", size: "Medium", website: "getcarbon.co" },
+            { name: "Fairmoney", industry: "Startup", size: "Medium", website: "fairmoney.io" },
+            { name: "Eyowo", industry: "Startup", size: "Small", website: "eyowo.com" },
+            { name: "Paga", industry: "Startup", size: "Medium", website: "mypaga.com" },
+            { name: "Patricia", industry: "Startup", size: "Small", website: "patricia.com.ng" },
+            { name: "Bundle Africa", industry: "Startup", size: "Small", website: "bundle.africa" },
+            { name: "Busha", industry: "Startup", size: "Small", website: "busha.co" },
+            { name: "Yellow Card", industry: "Startup", size: "Small", website: "yellowcard.io" },
+            { name: "Quidax", industry: "Startup", size: "Small", website: "quidax.com" },
+            { name: "Chipper Cash", industry: "Startup", size: "Medium", website: "chippercash.com" },
+            { name: "Bankly", industry: "Startup", size: "Small", website: "bankly.ng" },
+            { name: "Brass", industry: "Startup", size: "Small", website: "trybrass.com" },
+            { name: "Kippa", industry: "Startup", size: "Small", website: "kippa.africa" },
+            { name: "Lendsqr", industry: "Startup", size: "Small", website: "lendsqr.com" },
+            { name: "Nomba (formerly Kudi)", industry: "Startup", size: "Medium", website: "nomba.com" },
+            { name: "Moniepoint (formerly TeamApt)", industry: "Startup", size: "Medium", website: "moniepoint.com" },
+            { name: "OPay", industry: "Startup", size: "Medium", website: "opayweb.com" },
+            { name: "PalmPay", industry: "Startup", size: "Medium", website: "palmpay.com" },
+            { name: "VFD Group", industry: "Startup", size: "Medium", website: "vfdgroup.com" },
+            { name: "Mono", industry: "Startup", size: "Small", website: "mono.co" },
+            { name: "Okra", industry: "Startup", size: "Small", website: "okra.ng" },
+            { name: "OnePipe", industry: "Startup", size: "Small", website: "onepipe.com" },
+
+            // Nigerian Startups - E-commerce & Retail
+            { name: "Jumia", industry: "Startup", size: "Medium", website: "jumia.com.ng" },
+            { name: "Konga", industry: "Startup", size: "Medium", website: "konga.com" },
+            { name: "TradeDepot", industry: "Startup", size: "Medium", website: "tradedepot.co" },
+            { name: "Alerzo", industry: "Startup", size: "Medium", website: "alerzo.com" },
+            { name: "Omnibiz", industry: "Startup", size: "Small", website: "omnibiz.com" },
+            { name: "Kwik Delivery", industry: "Startup", size: "Small", website: "kwik.delivery" },
+            { name: "MallforAfrica", industry: "Startup", size: "Medium", website: "mallforafrica.com" },
+            { name: "Sendbox", industry: "Startup", size: "Small", website: "sendbox.co" },
+            { name: "Bumpa", industry: "Startup", size: "Small", website: "getbumpa.com" },
+            { name: "Klump", industry: "Startup", size: "Small", website: "useklump.com" },
+            { name: "CredPal", industry: "Startup", size: "Small", website: "credpal.com" },
+            { name: "CDcare", industry: "Startup", size: "Small", website: "cdcare.ng" },
+            { name: "Jiji", industry: "Startup", size: "Medium", website: "jiji.ng" },
+            { name: "Payporte", industry: "Startup", size: "Small", website: "payporte.com" },
+            { name: "Cars45", industry: "Startup", size: "Medium", website: "cars45.com" },
+            { name: "Chowdeck", industry: "Startup", size: "Small", website: "chowdeck.com" },
+            { name: "Eden Life", industry: "Startup", size: "Small", website: "ouredenlife.com" },
+            { name: "Foodcourt", industry: "Startup", size: "Small", website: "foodcourt.ng" },
+            { name: "Appetito", industry: "Startup", size: "Small", website: "appetito.com.ng" },
+            { name: "Cartehub", industry: "Startup", size: "Small", website: "cartehub.com" },
+
+            // Nigerian Startups - Health Tech
+            { name: "Helium Health", industry: "Startup", size: "Medium", website: "heliumhealth.com" },
+            { name: "54gene", industry: "Startup", size: "Medium", website: "54gene.com" },
+            { name: "LifeBank", industry: "Startup", size: "Small", website: "lifebank.ng" },
+            { name: "Remedial Health", industry: "Startup", size: "Small", website: "remedial.health" },
+            { name: "Wellvis Health", industry: "Startup", size: "Small", website: "wellvis.org" },
+            { name: "DrugStoc", industry: "Startup", size: "Small", website: "drugstoc.com" },
+            { name: "CribMD", industry: "Startup", size: "Small", website: "cribmd.com" },
+            { name: "Lifestores Healthcare", industry: "Startup", size: "Small", website: "lifestores.ng" },
+            { name: "WellaHealth", industry: "Startup", size: "Small", website: "wellahealth.com" },
+            { name: "Healthtracka", industry: "Startup", size: "Small", website: "healthtracka.com" },
+            { name: "Famasi", industry: "Startup", size: "Small", website: "getfamasi.com" },
+            { name: "Medsaf", industry: "Startup", size: "Small", website: "medsaf.com" },
+            { name: "Healthbotics", industry: "Startup", size: "Small", website: "healthbotics.io" },
+            { name: "RxAll", industry: "Startup", size: "Small", website: "rxall.net" },
+            { name: "Pharmaserve", industry: "Startup", size: "Small", website: "pharmaserve.com.ng" },
+            { name: "Chekkit", industry: "Startup", size: "Small", website: "chekkitapp.com" },
+            { name: "MyMedicalBank", industry: "Startup", size: "Small", website: "mymedicalbank.com" },
+            { name: "MobiHealth", industry: "Startup", size: "Small", website: "mobihealthinternational.com" },
+            { name: "Field Intelligence", industry: "Startup", size: "Small", website: "fieldintelligence.org" },
+            { name: "Tremendoc", industry: "Startup", size: "Small", website: "tremendoc.com" },
+
+            // Nigerian Startups - Agritech
+            { name: "ThriveAgric", industry: "Startup", size: "Medium", website: "thriveagric.com" },
+            { name: "Farmcrowdy", industry: "Startup", size: "Small", website: "farmcrowdy.com" },
+            { name: "Releaf", industry: "Startup", size: "Small", website: "releaf.africa" },
+            { name: "Agricorp", industry: "Startup", size: "Small", website: "agricorp.co" },
+            { name: "Groupfarma", industry: "Startup", size: "Small", website: "groupfarma.com" },
+            { name: "AgroMall", industry: "Startup", size: "Small", website: "agromall.com.ng" },
+            { name: "Zowasel", industry: "Startup", size: "Small", website: "zowasel.com" },
+            { name: "BeatDrone", industry: "Startup", size: "Small", website: "beatdrone.co" },
+            { name: "EZFarming", industry: "Startup", size: "Small", website: "ezfarming.com" },
+            { name: "Hello Tractor", industry: "Startup", size: "Small", website: "hellotractor.com" },
+            { name: "Farm4Me", industry: "Startup", size: "Small", website: "farm4me.com" },
+            { name: "Probity Farms", industry: "Startup", size: "Small", website: "probityfarms.com" },
+            { name: "Farmgate Africa", industry: "Startup", size: "Small", website: "farmgateafrica.com" },
+            { name: "Alosfarm", industry: "Startup", size: "Small", website: "alosfarm.com" },
+            { name: "Agriple", industry: "Startup", size: "Small", website: "agriple.com" },
+            { name: "Crop2Cash", industry: "Startup", size: "Small", website: "crop2cash.com.ng" },
+            { name: "Farmula", industry: "Startup", size: "Small", website: "farmula.co" },
+            { name: "Pricepally", industry: "Startup", size: "Small", website: "pricepally.com" },
+            { name: "Afrimash", industry: "Startup", size: "Small", website: "afrimash.com" },
+            { name: "EasyFarm", industry: "Startup", size: "Small", website: "eazyfarm.ng" },
+
+            // Nigerian Startups - Edtech
+            { name: "uLesson", industry: "Startup", size: "Medium", website: "ulesson.com" },
+            { name: "Edves", industry: "Startup", size: "Small", website: "edves.net" },
+            { name: "Gradely", industry: "Startup", size: "Small", website: "gradely.ng" },
+            { name: "ScholarX", industry: "Startup", size: "Small", website: "scholarx.co" },
+            { name: "PrepClass", industry: "Startup", size: "Small", website: "prepclass.com.ng" },
+            { name: "Tuteria", industry: "Startup", size: "Small", website: "tuteria.com" },
+            { name: "Teesas", industry: "Startup", size: "Small", website: "teesas.com" },
+            { name: "Traindemy", industry: "Startup", size: "Small", website: "traindemy.com" },
+            { name: "Classmigo", industry: "Startup", size: "Small", website: "classmigo.com" },
+            { name: "FlexiSAF", industry: "Startup", size: "Small", website: "flexisaf.com" },
+            { name: "Afrilearn", industry: "Startup", size: "Small", website: "afrilearn.com" },
+            { name: "AltSchool Africa", industry: "Startup", size: "Medium", website: "altschoolafrica.com" },
+            { name: "Utiva", industry: "Startup", size: "Small", website: "utiva.io" },
+            { name: "LearnAm", industry: "Startup", size: "Small", website: "learnam.ng" },
+            { name: "Edusko", industry: "Startup", size: "Small", website: "edusko.com" },
+            { name: "Schoolable", industry: "Startup", size: "Small", website: "schoolable.co" },
+            { name: "Edukoya", industry: "Startup", size: "Small", website: "edukoya.com" },
+            { name: "Taeillo", industry: "Startup", size: "Small", website: "taeillo.com" },
+            { name: "SlimTrader", industry: "Startup", size: "Small", website: "slimtrader.com" },
+            { name: "Imisi 3D", industry: "Startup", size: "Small", website: "imisi3d.com" },
+
+            // Nigerian Startups - Proptech & Real Estate
+            { name: "Spleet", industry: "Startup", size: "Small", website: "spleet.africa" },
+            { name: "Muster", industry: "Startup", size: "Small", website: "muster.ng" },
+            { name: "Fibre", industry: "Startup", size: "Small", website: "fibre.ng" },
+            { name: "HouseAfrica", industry: "Startup", size: "Small", website: "houseafrica.io" },
+            { name: "SmallSmall", industry: "Startup", size: "Small", website: "smallsmall.com" },
+            { name: "Estate Intel", industry: "Startup", size: "Small", website: "estateintel.com" },
+            { name: "RentSmallSmall", industry: "Startup", size: "Small", website: "rentsmallsmall.com" },
+            { name: "Rent4Less", industry: "Startup", size: "Small", website: "rent4less.ng" },
+            { name: "Propertypro", industry: "Startup", size: "Small", website: "propertypro.ng" },
+            { name: "ToLet.com.ng", industry: "Startup", size: "Small", website: "tolet.com.ng" },
+            { name: "Awabike", industry: "Startup", size: "Small", website: "awabike.com" },
+            { name: "BuyLetLive", industry: "Startup", size: "Small", website: "buyletlive.com" },
+            { name: "QuickCheck", industry: "Startup", size: "Small", website: "quickcheck.ng" },
+            { name: "PiggyVest", industry: "Startup", size: "Medium", website: "piggyvest.com" },
+            { name: "Seso Global", industry: "Startup", size: "Small", website: "seso.global" },
+            { name: "PropertyBlock", industry: "Startup", size: "Small", website: "propertyblock.ng" },
+            { name: "Hutbay", industry: "Startup", size: "Small", website: "hutbay.com" },
+            { name: "MyCribNG", industry: "Startup", size: "Small", website: "mycrib.ng" },
+            { name: "Rent4Less", industry: "Startup", size: "Small", website: "rent4less.ng" },
+            { name: "PropertyPro", industry: "Startup", size: "Small", website: "propertypro.ng" },
+
+            // Nigerian Startups - Logistics & Mobility
+            { name: "Metro Africa Xpress (MAX)", industry: "Startup", size: "Medium", website: "max.ng" },
+            { name: "Kobo360", industry: "Startup", size: "Medium", website: "kobo360.com" },
+            { name: "GIG Mobility", industry: "Startup", size: "Medium", website: "gigm.com" },
+            { name: "GIG Logistics", industry: "Startup", size: "Medium", website: "giglogistics.com" },
+            { name: "Kwik Delivery", industry: "Startup", size: "Small", website: "kwik.delivery" },
+            { name: "Gokada", industry: "Startup", size: "Small", website: "gokada.ng" },
+            { name: "Shuttlers", industry: "Startup", size: "Small", website: "shuttlers.ng" },
+            { name: "Plentywaka", industry: "Startup", size: "Small", website: "plentywaka.com" },
+            { name: "Treepz (formerly Plentywaka)", industry: "Startup", size: "Small", website: "treepz.com" },
+            { name: "MVXchange", industry: "Startup", size: "Small", website: "mvxchange.com" },
+            { name: "Haulr", industry: "Startup", size: "Small", website: "haulr.ng" },
+            { name: "Trukker", industry: "Startup", size: "Small", website: "trukker.com" },
+            { name: "SendMe", industry: "Startup", size: "Small", website: "sendme.ng" },
+            { name: "Ekanti Express", industry: "Startup", size: "Small", website: "ekantiexpress.com" },
+            { name: "LastMile Deliveries", industry: "Startup", size: "Small", website: "lastmile.delivery" },
+            { name: "ACE (Africa Courier Express)", industry: "Startup", size: "Small", website: "ace.africa" },
+            { name: "LoadNG Logistics", industry: "Startup", size: "Small", website: "loadng.com" },
+            { name: "ShapShap", industry: "Startup", size: "Small", website: "shapshap.ng" },
+            { name: "Dispatch Riders", industry: "Startup", size: "Small", website: "dispatchriders.ng" },
+            { name: "Pickmeup", industry: "Startup", size: "Small", website: "pickmeup.ng" },
+
+            // Nigerian Startups - Renewable Energy & Cleantech
+            { name: "Daystar Power", industry: "Startup", size: "Medium", website: "daystar-power.com" },
+            { name: "Rensource", industry: "Startup", size: "Medium", website: "rensource.energy" },
+            { name: "Arnergy", industry: "Startup", size: "Small", website: "arnergy.com" },
+            { name: "Lumos Nigeria", industry: "Startup", size: "Small", website: "lumos-global.com" },
+            { name: "Auxano Solar", industry: "Startup", size: "Small", website: "auxanosolar.com" },
+            { name: "Oolu Solar", industry: "Startup", size: "Small", website: "oolusolar.com" },
+            { name: "All On", industry: "Startup", size: "Small", website: "all-on.com" },
+            { name: "Consistent Energy", industry: "Startup", size: "Small", website: "consistent.ng" },
+            { name: "Proxima Power", industry: "Startup", size: "Small", website: "proximapower.ng" },
+            { name: "d.light", industry: "Startup", size: "Small", website: "dlight.com" },
+            { name: "Beacon Power Services", industry: "Startup", size: "Small", website: "beaconpowerservices.com" },
+            { name: "Wavetra Energy", industry: "Startup", size: "Small", website: "wavetraenergy.com" },
+            { name: "Green Village Electricity", industry: "Startup", size: "Small", website: "gve-group.com" },
+            { name: "Havenhill Synergy", industry: "Startup", size: "Small", website: "havenhillsynergy.com" },
+            { name: "Powerstove Energy", industry: "Startup", size: "Small", website: "powerstove.com.ng" },
+            { name: "Smarter Grid International", industry: "Startup", size: "Small", website: "smartergrid.ng" },
+            { name: "Cloud Energy", industry: "Startup", size: "Small", website: "cloudenergy.com.ng" },
+            { name: "Sosai Renewable Energies", industry: "Startup", size: "Small", website: "sosairen.org" },
+            { name: "Shyft Power Solutions", industry: "Startup", size: "Small", website: "shyftpower.io" },
+            { name: "ZOLA Electric", industry: "Startup", size: "Small", website: "zolaelectric.com" },
+
+            // Additional FMCG Companies
+            { name: "Ajinomoto Foods", industry: "FMCG", size: "Medium", website: "ajinomoto-nigeria.com" },
+            { name: "Lily Packs", industry: "FMCG", size: "Small", website: "lilypacks.com" },
+            { name: "Loxia Bakery", industry: "FMCG", size: "Small", website: "loxiabakery.com" },
+            { name: "Tiger Foods", industry: "FMCG", size: "Medium", website: "tigerfoods.com.ng" },
+            { name: "Royal Mills & Foods", industry: "FMCG", size: "Medium", website: "royalmillsfoods.com" },
+            { name: "Nutricima", industry: "FMCG", size: "Medium", website: "nutricima.com" },
+            { name: "Stallion Group", industry: "FMCG", size: "Large", website: "stalliongroup.com" },
+            { name: "Wamco Nigeria", industry: "FMCG", size: "Large", website: "frieslandcampina.com.ng" },
+            { name: "Eleganza Industries", industry: "FMCG", size: "Medium", website: "eleganzaindustries.com" },
+            { name: "Mopheth Pharmacy", industry: "FMCG", size: "Medium", website: "mophethpharmacy.com" },
+            { name: "Vitafoam Nigeria", industry: "FMCG", size: "Medium", website: "vitafoam.com.ng" },
+            { name: "Mouka Foam", industry: "FMCG", size: "Medium", website: "mouka.com" },
+            { name: "Activa International", industry: "FMCG", size: "Medium", website: "activa-international.com" },
+            { name: "Nasco Group", industry: "FMCG", size: "Medium", website: "nascogroup.com" },
+            { name: "Sosaco Nigeria", industry: "FMCG", size: "Medium", website: "sosaco.com" },
+            { name: "Greenfield Assets", industry: "FMCG", size: "Medium", website: "greenfieldassetsltd.com" },
+            { name: "Wakanow", industry: "Startup", size: "Medium", website: "wakanow.com" },
+            { name: "Yudala", industry: "FMCG", size: "Medium", website: "yudala.com" },
+            { name: "Aidis Nigeria", industry: "FMCG", size: "Small", website: "aidisnigeria.com" },
+            { name: "House of Tara", industry: "FMCG", size: "Small", website: "houseoftara.com" },
+            { name: "SPAR Nigeria", industry: "FMCG", size: "Large", website: "sparnigeria.com" },
+            { name: "Hubmart Stores", industry: "FMCG", size: "Medium", website: "hubmart.ng" },
+            { name: "The Place", industry: "FMCG", size: "Medium", website: "theplacenigeria.com" },
+            { name: "Chicken Republic", industry: "FMCG", size: "Medium", website: "chicken-republic.com" },
+            { name: "Kilimanjaro", industry: "FMCG", size: "Medium", website: "kilimanjaronigeria.com" },
+            { name: "Sweet Sensation", industry: "FMCG", size: "Medium", website: "sweetsensations.com.ng" },
+            { name: "Tantalizers", industry: "FMCG", size: "Medium", website: "tantalizersnig.com" },
+            { name: "Domino's Pizza Nigeria", industry: "FMCG", size: "Medium", website: "dominospizza.ng" },
+            { name: "Cold Stone Creamery Nigeria", industry: "FMCG", size: "Medium", website: "coldstonecreamery.ng" },
+            { name: "KFC Nigeria", industry: "FMCG", size: "Medium", website: "kfc.com.ng" },
+            { name: "Mr. Bigg's", industry: "FMCG", size: "Medium", website: "mrbiggs.com" },
+            { name: "Happy Coffee", industry: "FMCG", size: "Small", website: "happycoffee.ng" },
+            { name: "Cookie Jar", industry: "FMCG", size: "Small", website: "cookiejarng.com" },
+            { name: "Hans & René", industry: "FMCG", size: "Small", website: "hansandrene.com" },
+            { name: "Yogurberry Nigeria", industry: "FMCG", size: "Small", website: "yogurberry.com.ng" },
+            { name: "Malta Guinness", industry: "FMCG", size: "Large", website: "maltaguinness.com" },
+            { name: "Fan Milk Nigeria", industry: "FMCG", size: "Medium", website: "fanmilk-gh.com" },
+            { name: "AJE Nigeria", industry: "FMCG", size: "Medium", website: "ajegroup.com" },
+            { name: "Godrej Nigeria", industry: "FMCG", size: "Medium", website: "godrej.com" },
+            { name: "L'Oreal Nigeria", industry: "FMCG", size: "Medium", website: "loreal.ng" },
+
+            // Additional Startups
+            { name: "Termii", industry: "Startup", size: "Small", website: "termii.com" },
+            { name: "TalentQL", industry: "Startup", size: "Small", website: "talentql.com" },
+            { name: "Credpal", industry: "Startup", size: "Small", website: "credpal.com" },
+            { name: "Bloc", industry: "Startup", size: "Small", website: "blochq.io" },
+            { name: "Indicina", industry: "Startup", size: "Small", website: "indicina.co" },
+            { name: "Anchor", industry: "Startup", size: "Small", website: "getanchor.co" },
+            { name: "Duplo", industry: "Startup", size: "Small", website: "goduplo.com" },
+            { name: "Herconomy", industry: "Startup", size: "Small", website: "herconomy.com" },
+            { name: "Bumpa", industry: "Startup", size: "Small", website: "getbumpa.com" },
+            { name: "Marketforce", industry: "Startup", size: "Small", website: "marketforce.io" },
+            { name: "Healthlane", industry: "Startup", size: "Small", website: "healthlane.co" },
+            { name: "Judy", industry: "Startup", size: "Small", website: "judy.co" },
+            { name: "Octamile", industry: "Startup", size: "Small", website: "octamile.com" },
+            { name: "GetEquity", industry: "Startup", size: "Small", website: "getequity.io" },
+            { name: "SeamlessHR", industry: "Startup", size: "Medium", website: "seamlesshr.com" },
+            { name: "Xend Finance", industry: "Startup", size: "Small", website: "xend.finance" },
+            { name: "Sendstack", industry: "Startup", size: "Small", website: "sendstack.co" },
+            { name: "Nguvu Health", industry: "Startup", size: "Small", website: "nguvuhealth.com" },
+            { name: "Youverify", industry: "Startup", size: "Small", website: "youverify.co" },
+            { name: "VerifyMe", industry: "Startup", size: "Small", website: "verifyme.ng" },
+            { name: "CredoLab", industry: "Startup", size: "Small", website: "credolab.com" },
+            { name: "Identitypass", industry: "Startup", size: "Small", website: "myidentitypass.com" },
+            { name: "OneWattSolar", industry: "Startup", size: "Small", website: "onewattsolar.com" },
+            { name: "Eden Life", industry: "Startup", size: "Small", website: "ouredenlife.com" },
+            { name: "Stears", industry: "Startup", size: "Small", website: "stears.co" },
+            { name: "Bitmama", industry: "Startup", size: "Small", website: "bitmama.io" },
+            { name: "Kwaba", industry: "Startup", size: "Small", website: "kwaba.com.ng" },
+            { name: "Bloc", industry: "Startup", size: "Small", website: "blochq.io" },
+            { name: "Afriex", industry: "Startup", size: "Small", website: "afriexapp.com" },
+            { name: "Cashtoken", industry: "Startup", size: "Small", website: "cashtoken.ng" },
+            { name: "Blueloop", industry: "Startup", size: "Small", website: "blueloop.app" },
+            { name: "Lemonade Finance", industry: "Startup", size: "Small", website: "lemonade.finance" },
+            { name: "Grey", industry: "Startup", size: "Small", website: "grey.co" },
+            { name: "Sudo Africa", industry: "Startup", size: "Small", website: "sudoafrica.com" },
+            { name: "ILLA", industry: "Startup", size: "Small", website: "illa.network" },
+            { name: "Dart", industry: "Startup", size: "Small", website: "dartafrica.io" },
+            { name: "Vesti", industry: "Startup", size: "Small", website: "wevesti.com" },
+            { name: "Payday", industry: "Startup", size: "Small", website: "usepayday.com" },
+            { name: "Quidax", industry: "Startup", size: "Small", website: "quidax.com" },
+            { name: "Kippa", industry: "Startup", size: "Small", website: "kippa.africa" },
+            { name: "Pocket App", industry: "Startup", size: "Small", website: "mypocketapp.io" },
+            { name: "TymeBank Nigeria", industry: "Startup", size: "Medium", website: "tymebank.ng" },
+            { name: "Fez Delivery", industry: "Startup", size: "Small", website: "fezdelivery.com" }
         ];
 
         // DOM elements
@@ -1048,10 +1409,10 @@
             const searchTerm = searchInput.value.toLowerCase();
             const industryValue = industryFilter.value;
             const sizeValue = sizeFilter.value;
-            
+
             // Clear existing businesses
             businessContainer.innerHTML = '';
-            
+
             // Filter and display businesses
             businesses
                 .filter(business => {
@@ -1059,13 +1420,13 @@
                     const matchesSearch = business.name.toLowerCase().includes(searchTerm) ||
                                         business.website.toLowerCase().includes(searchTerm) ||
                                         business.industry.toLowerCase().includes(searchTerm);
-                    
+
                     // Filter by industry
                     const matchesIndustry = !industryValue || business.industry === industryValue;
-                    
+
                     // Filter by size
                     const matchesSize = !sizeValue || business.size === sizeValue;
-                    
+
                     return matchesSearch && matchesIndustry && matchesSize;
                 })
                 .forEach(business => {
@@ -1073,30 +1434,30 @@
                     businessContainer.appendChild(card);
                 });
         }
-        
+
         // Function to create business card
         function createBusinessCard(business) {
             const card = document.createElement('div');
             card.className = 'business-card';
-            
+
             const name = document.createElement('h3');
             name.className = 'business-name';
             name.textContent = business.name;
-            
+
             const industry = document.createElement('p');
             industry.className = 'business-industry';
             industry.textContent = `Industry: ${business.industry}`;
-            
+
             const size = document.createElement('p');
             size.className = 'business-size';
             size.textContent = `Size: ${business.size}`;
-            
+
             const website = document.createElement('a');
             website.className = 'business-website';
             website.href = `https://${business.website}`;
             website.target = '_blank';
             website.textContent = business.website;
-            
+
             const searchButton = document.createElement('button');
             searchButton.className = 'search-btn';
             searchButton.textContent = 'Find Contact Information';
@@ -1105,21 +1466,21 @@
                 const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
                 window.open(googleSearchUrl, '_blank');
             });
-            
+
             card.appendChild(name);
             card.appendChild(industry);
             card.appendChild(size);
             card.appendChild(website);
             card.appendChild(searchButton);
-            
+
             return card;
         }
-        
+
         // Event listeners
         searchInput.addEventListener('input', filterBusinesses);
         industryFilter.addEventListener('change', filterBusinesses);
         sizeFilter.addEventListener('change', filterBusinesses);
-        
+
         // Show/hide back to top button
         window.addEventListener('scroll', () => {
             if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
@@ -1128,7 +1489,7 @@
                 topButton.style.display = 'none';
             }
         });
-        
+
         // Back to top functionality
         topButton.addEventListener('click', (e) => {
             e.preventDefault();
@@ -1137,7 +1498,7 @@
                 behavior: 'smooth'
             });
         });
-        
+
         // Initial render
         filterBusinesses();
     </script>
